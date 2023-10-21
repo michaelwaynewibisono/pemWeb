@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside-wrap {
+    display: block;
+    text-align: center;
+}
+
+input[type=button] {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+input[type=text] {
+    height: 50px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+}

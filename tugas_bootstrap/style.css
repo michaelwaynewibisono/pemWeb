@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.text {
+    text-align: right;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.progress {
+    height: 10%;
+}

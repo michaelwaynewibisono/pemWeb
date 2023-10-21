@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="inside-wrap">
+            <input type="text" id="kotak" disabled>
+            <br><br>
+            <input type="button" value="1" onclick="tampil('1')">
+            <input type="button" value="2" onclick="tampil('2')">
+            <input type="button" value="3" onclick="tampil('3')">
+            <br><br>
+            <input type="button" value="4" onclick="tampil('4')">
+            <input type="button" value="5" onclick="tampil('5')">
+            <input type="button" value="6" onclick="tampil('6')">
+            <br><br>
+            <input type="button" value="7" onclick="tampil('7')">
+            <input type="button" value="8" onclick="tampil('8')">
+            <input type="button" value="9" onclick="tampil('9')">
+            <br><br>
+            <input type="button" value="+" onclick="tampil('+')">
+            <input type="button" value="-" onclick="tampil('-')">
+            <input type="button" value="*" onclick="tampil('*')">
+            <input type="button" value="/" onclick="tampil('/')">
+            <br><br>
+            <input type="button" id="hapus" value="C" onclick="hapus()">
+            <input type="button" value="=" onclick="hitung()">
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
