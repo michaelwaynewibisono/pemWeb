@@ -1,34 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .wrap {
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.inside-wrap {
+.inside {
     display: block;
-    text-align: center;
-    width: 100%;
-}
-
-input[type=button] {
-    height: 50px;
-    width: 50px;
-    font-size: 20px;
-    margin: 0 0.125rem;
-    cursor: pointer;
-}
-
-input[type=text] {
-    height: 50px;
-    border: 1px solid #2e2e2e;
-    border-radius: 5px;
-    font-size: 30px;
-    text-align: center;
 }

@@ -1,49 +1,26 @@
 <template>
     <div class="wrap">
-        <div class="inside-wrap">
-            <input type="text" id="kotak" disabled>
-            <br><br>
-            <input type="button" value="1" @click="tampil('1')">
-            <input type="button" value="2" @click="tampil('2')">
-            <input type="button" value="3" @click="tampil('3')">
-            <br><br>
-            <input type="button" value="4" @click="tampil('4')">
-            <input type="button" value="5" @click="tampil('5')">
-            <input type="button" value="6" @click="tampil('6')">
-            <br><br>
-            <input type="button" value="7" @click="tampil('7')">
-            <input type="button" value="8" @click="tampil('8')">
-            <input type="button" value="9" @click="tampil('9')">
-            <br><br>
-            <input type="button" value="+" @click="tampil('+')">
-            <input type="button" value="-" @click="tampil('-')">
-            <input type="button" value="*" @click="tampil('*')">
-            <input type="button" value="/" @click="tampil('/')">
-            <br><br>
-            <input type="button" id="hapus" value="C" @click="hapus()">
-            <input type="button" value="=" @click="hitung()">
+        <div class="inside">
+            <div id="app">Hasil: {{ hasil }}</div>
+            <input v-model="angka1" type="number">
+            <input v-model="angka2" type="number">
+            <br>
+            <button v-on:click="hasil = angka1 + angka2">+</button>
+            <button @click="hasil = angka1 - angka2">-</button>
+            <button @click="hasil = angka1 * angka2">*</button>
+            <button @click="hasil = angka1 / angka2">/</button>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    methods: {
-        tampil(value) {
-            let nilai = document.getElementById("kotak");
-            nilai.value = nilai.value + value;
-        },
-
-        hapus() {
-            let kosong = document.getElementById("kotak");
-            kosong.value = "";
-        },
-
-        hitung() {
-            let a = document.getElementById("kotak");
-            let hasil = eval(a.value);
-            document.getElementById("kotak").value = hasil;
-        },
+    data() {
+        return {
+            angka1: '',
+            angka2: '',
+            hasil: '',
+        }
     }
 }
 </script>
